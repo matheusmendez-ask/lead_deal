@@ -1,12 +1,9 @@
 import pandas as pd
-import pandas_gbq
 import numpy as np
 import datetime
 import json
 import requests
 import datetime as dt
-from google.cloud import bigquery
-from google.oauth2 import service_account
 import streamlit as st
 
 # CSS personalizado
