@@ -198,10 +198,10 @@ if st.session_state.get('autenticado', False):
             submit_button = st.form_submit_button("Criar Negócio")
 
             if submit_button:
-                apikey_moskit = "388887a3-3754-4f1e-baec-ad55c0f49720"
+                laleo = "388887a3-3754-4f1e-baec-ad55c0f49720"
                 created_by_id = st.session_state['created_by_id']
                 responsible_id = st.session_state['responsible_id']
-                response_moskit = criar_deal(nome_cliente, fone, email, apikey_moskit, created_by_id, responsible_id, feira, "OPEN")
+                response_moskit = criar_deal(nome_cliente, fone, email, laleo, created_by_id, responsible_id, feira, "OPEN")
 
                 if response_moskit.status_code == 200:
                     st.success("Negócio criado com sucesso no Moskit CRM!")
